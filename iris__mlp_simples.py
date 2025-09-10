@@ -3,6 +3,8 @@
 """
 Created on Mon Oct 23 23:01:16 2023
 
+Multi Layer Perceptron
+
 @author: yurifarod
 """
 

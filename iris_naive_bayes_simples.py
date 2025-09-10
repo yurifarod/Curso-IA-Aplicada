@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Mon Oct 23 23:01:16 2023
-
+Naive Bayes
 @author: yurifarod
 """
 

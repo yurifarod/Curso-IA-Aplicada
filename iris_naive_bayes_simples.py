@@ -11,7 +11,7 @@ from sklearn.naive_bayes import GaussianNB
 from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
 import numpy as np
-from sklearn.metrics import confusion_matrix
+from sklearn.metrics import confusion_matrix, accuracy_score
 
 base = pd.read_csv('datasets/iris.csv')
 features = base.iloc[:, 0:4].values
@@ -31,6 +31,8 @@ classificador.fit(previsores_treinamento, classe_treinamento)
 previsoes = classificador.predict(previsores_teste)
 previsoes = (previsoes > 0.5)
 
-matriz = confusion_matrix(previsoes, classe_teste)
+acuracia = accuracy_score(previsoes, classe_teste)
+print("Acuracia do modelo: %.2f"%acuracia)
 
+matriz = confusion_matrix(previsoes, classe_teste)
 print(matriz)

@@ -29,7 +29,6 @@ classificador.fit(previsores_treinamento, classe_treinamento)
 
 
 previsoes = classificador.predict(previsores_teste)
-previsoes = (previsoes > 0.5)
 
 acuracia = accuracy_score(previsoes, classe_teste)
 print("Acuracia do modelo: %.2f"%acuracia)
